@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 72rem;
+    margin: 0 auto;
+    
+}
+
+.col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color:#ffff;
+}
+
+/* CSS of header */
+
+.header {
+    padding: 1rem;
+    background-color: #1D232C;
+}
+
+.header nav a {
+    margin-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ffffff;
+}
+
+.header nav a:hover {
+    color: #0E9192;
+    border-color: #0E9192;
+}
+
+.header h1 {
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+.header h1 span {
+    color: #0E9192;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* CSS of carousel */
+
+.carousel {
+    background-image: url("../images/b1.jpg");
+    height: 42rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    
+}
+
+.carousel h1 {
+    font-size: 2.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.intro .container,
+.blog .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.intro ,
+.blog{
+    padding: 3rem 0;
+}
+
+.intro .item {
+    margin-right: 1.5rem;
+}
+
+.intro p{
+    color: #CFCCCC;
+}
+
+.intro .item-1,
+.intro .item-5,
+.intro .item-6,
+.blog h1,
+.portfolio .container h1 {
+    grid-column: 1/span 3;
+}
+
+.intro i {
+    padding: 1.4rem;
+    border: 1px solid #D8D6D6;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+h1 {
+    font-weight: 200;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.intro .item-6 {
+    color: #1D232C;
+}
+
+.intro h3 {
+    margin: 1rem 0;
+    color: #23CECE;
+    font-size: 1.5rem;
+}
+
+.statistic {
+    background-color: #23CECE;
+    padding: 3rem 0;
+}
+
+.statistic .container,
+.team .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.statistic h1,
+.team h1{
+    grid-column: 1/span 4;
+    margin-bottom: 1.8rem;
+}
+
+.statistic .item h1 {
+    color: #ffffff;
+    
+}
+
+.blog .item {
+    background-color: #EFEFEF;
+    margin-right: 2rem;
+    text-align: left;
+}
+.blog .item button,
+.more-info button {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    background-color: #000000;
+    color: #50dbdd;
+}
+
+.blog .item p,
+.blog .item h3
+ {
+    padding: 1rem;
+    
+}
+
+.blog .item h3 {
+    color: #23CECE;
+}
+.img-item {
+    width: 100%
+}
+
+
+
+.video-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 1rem 0;
+    height: 20rem;
+    
+}
+
+.video {
+    background-image: url("../images/video.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/span 2;
+    height: 100%;
+}
+
+.video-info .more-info {
+    grid-column: 3/span 3;
+    padding: 1.5rem 5rem;
+    background-color: #23CECE;
+    height: 100%;
+    
+}
+
+.video i {
+    color: #ffffff;
+    text-align: center;
+    padding: 0.7rem;
+    background-color: rgba(7, 204, 204,0.3);
+    border-radius: 50%;
+    line-height: 1.4rem;
+}
+
+.more-info h2 {
+    margin-bottom: 1.3rem;
+    font-weight: 400;
+}
+.more-info button {
+    margin-top: 1rem;
+}
+.more-info p {
+    color: #ffffff;
+}
+
+.portfolio .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem 0;
+}
+
+.portfolio img{
+    margin-right: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subscribe {
+    background-color: #23CECE;
+    padding: 2rem 10rem;
+    
+}
+
+.subscribe .email-form {
+    width: 100%;
+}
+.subscribe .container input[type="email"]{
+    padding: 0.5rem;
+    width: 40%;
+    margin: 1rem 0;
+}
+
+.subscribe .container input[type="submit"] {
+    padding: 0.3rem 2rem;
+    font-size: 1rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+}
+
+.team {
+    padding: 2rem 0;
+    
+}
+.team .container {
+    grid-column-gap: 1.4rem
+}   
+.team .container .item img{
+    width: 100%;
+
+    
+}
+
+.team .container .item {
+    background-color: #363636;
+    color: #ffffff;
+    text-align: center;
+}
+
+.team .container .info-team i{
+    border: 1px solid #ffffff;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.team .container .info-team {
+    padding: 1rem;
+}
+.info-team h3 {
+    margin-bottom: 0.5rem;
+    color: #23CECE;
+}
+
+.icon-item2 {
+    margin: 0 1rem;   
+}
